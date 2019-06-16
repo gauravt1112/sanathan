@@ -21,7 +21,7 @@
 		    <div class="scroll-up1"> <a href="#top"><img src="img/back-to-top.png" style="width: 70%;"/></a></div>
 <div data-spy="" style="z-index: 99999;" class="nav-wrapper">
 <div class="logo" id="logo-id">
-		<a href="index.php"><img class="img-responsive" src="img/Untitled-1.png"></a>	
+		<a href="index.html"><img class="img-responsive" src="img/Untitled-1.png"></a>	
 
 	</div>
 	
@@ -44,14 +44,14 @@
 
 				<div class="collapse navbar-collapse" id="custom-collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="who-we-are.php">WHO WE ARE</a></li>
-						<li><a href="what-we-do.php">WHAT WE DO</a></li>
-                        <li><a href="how-we-got-here.php">HOW WE GOT HERE</a></li>
-                        <li><a href="product.php">OUR PRODUCTS</a></li>
-						<li><a href="our-setup.php">OUR SET-UP</a></li>
-						<li><a href="our-reach.php">OUR REACH</a></li>
-						<li><a href="careers.php">CAREERS</a></li>
-						<li><a href="contact-us.php">CONTACT US</a></li>
+						<li><a href="who-we-are.html">WHO WE ARE</a></li>
+						<li><a href="what-we-do.html">WHAT WE DO</a></li>
+                        <li><a href="how-we-got-here.html">HOW WE GOT HERE</a></li>
+                        <li><a href="product.html">OUR PRODUCTS</a></li>
+						<li><a href="our-setup.html">OUR SET-UP</a></li>
+						<li><a href="our-reach.html">OUR REACH</a></li>
+						<li><a href="careers.html">CAREERS</a></li>
+						<li><a href="contact-us.html">CONTACT US</a></li>
 					</ul>
 				</div>
 
@@ -62,75 +62,90 @@
 	</header>
 	</div>
 		   <link rel="stylesheet" href="css/animate.css"/>
+		  
 	</head>
 	<body>
-		<div class="careers-banner">
+		<div class="contact-us-banner">
 		<div>
-<div class="careers-banner-text wow fadeIn" data-wow-duration="8s">
+<div class="contact-us-banner-text wow fadeIn" data-wow-duration="8s">
 		<!--<div class="who-we-are-banner-text-one" style="background-color: rgba(0,0,0,0.1);">
 			
 		</div>-->
 	</div>
 	</div>
 	</div>
-	<div class="careers-content">
-	<div class="careers-header-wrapper">
+	<div class="contact-us-content">
+	<div class="contact-us-header-wrapper">
 		<h1>
-				Careers
+				Contact Us
 		</h1>
-		<div class="careers-underline">
+		<div class="contact-us-underline">
 			<img src="img/images/line.png">
 		</div>
 		</div>
 		</div>
 		
-		<div class="careers-paragraph">
-We’re looking for smart, young individuals, who think that they can add value to our brand. If you see an opportunity and can explain  us how you can help us, we're all ears.
+		<div class="contact-us-paragraph hidden-xs">
+			<Span class="make-bold">Corporate Office :</Span> Lower Parel, Mumbai &nbsp;  &nbsp; <span class="make-bold">Manufacturing Facility :</Span> Silvassa DNH<br>
+			<span class="make-bold">Email :</Span> <a href="mailto:sales@sanathan.com" style="color: #336699; text-decoration: none;">sales@sanathan.com</a>   &nbsp;  &nbsp;  <span class="make-bold">Phone :</Span> +91 22 6634 3312 / 13 / 14
 		</div>
 		
-		<form method="post" action="newphpmailer/contact_post_form.php" enctype="multipart/form-data" id="careers-form">
+			<div class="contact-us-paragraph visible-xs">
+			<Span class="make-bold">Corporate Office :</Span> Lower Parel, Mumbai &nbsp;  &nbsp;<br> <span class="make-bold">Manufacturing Facility :</Span> Silvassa DNH<br>
+			<span class="make-bold">Email :</Span> <a href="mailto:sales@sanathan.com" style="color: #336699; text-decoration: none;">sales@sanathan.com</a>   &nbsp;  &nbsp; <br> <span class="make-bold">Phone :</Span> +91 22 6634 3312 / 13 / 14
+		</div>
+		
+		<div class="contact-us-inst">
+			Send An Enquiry
+		</div>
+		<form method="post" action="newphpmailer/submit_post_form.html" enctype="multipart/form-data" id="cntc-form">
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-3 col-md-3 col-sm-4 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-xs-offset-1">
 
-		<input type="text" class="form-control textbox" name="Forename" placeholder="Forename" data-validation="custom" data-validation-regexp="^([a-zA-Z]+)$"  data-validation-error-msg="This Field is required"/>
+		<input type="text" name="name" class="form-control textbox" placeholder="Name" data-validation="custom" data-validation-regexp="^([a-zA-Z]+)$"  data-validation-error-msg="This Field is required"/>
 
 		</div>
 		<div class="col-lg-3 col-md-3 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
-			<input type="text" class="form-control textbox" name="Surname" placeholder="Surname"/>
-	
+			<select class="form-control" name="select" id="sel1" data-validation="custom" data-validation-regexp="^([a-zA-Z]+)$"  data-validation-error-msg="This Field is required" onchange="if (this.value=='other'){this.form['other'].style.display='block'}else {this.form['other'].style.display='none'};">
+        <option>I am...</option>
+        <option>Agent</option>
+        <option>Customer</option>
+        <option>Trader</option>
+        <option value="other">Other</option>
+      </select>
 		</div>
 	</div>
 	
 	<div class="row">
 		<div class="col-lg-3 col-md-3 col-sm-4 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-xs-offset-1">
 			
-    	<input type="text" class="form-control textbox" name="Email" placeholder="Email" data-validation="required" data-validation-error-msg="This Email is not valid"/>
+    	<input type="text" name="" class="form-control textbox" placeholder="Country" style="display: none;"/>
 		</div>
 		<div class="col-lg-3 col-md-3 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
 			
-		<input type="text" class="form-control textbox" name="Designation" placeholder="Designation"/>
+		<input type="text" name="other" class="form-control textbox" placeholder="I am..." style="display: none;"/>
 		</div>
 	</div>
 	
 	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
-		<div>
-			<div class="careers-instruction-text">
-		Upload Resume
-	</div>
+		<div class="col-lg-3 col-md-3 col-sm-4 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-xs-offset-1">
+			
+    <!--	<input type="text" name="country" class="form-control textbox" placeholder="Country"/>-->
+    <select class="form-control input-medium bfh-countries" name="select1" id="sel2" data-country="India"></select>
 		</div>
+		<div class="col-lg-3 col-md-3 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
+			
+		<input type="text" name="company" class="form-control textbox" placeholder="Company Name"/>
+		
 		</div>
 	</div>
 	
 	<div class="row">
 		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-lg-offset-4 col-md-offset-4 col-sm-offset-3 col-xs-offset-1">
-		<div class="attachment-wrapper">
-	<div class="attachment">
-	<input type="file" name="upload[]" id="upload" class="upload" style="display: inline;"/>
-
-	</div>
-	</div>
+		<div>
+			<input type="text" name="contact" class="form-control textbox" id="contact-last" placeholder="Contact Number"/>
+		</div>
 		</div>
 	</div>
 	
@@ -144,7 +159,26 @@ We’re looking for smart, young individuals, who think that they can add value 
 	
 </div>
 </form>
-	
+		
+		<!--<form id="cuf" method="post" action="" enctype="multipart/form-data">
+	<div class="contact-us-form-wrapper">
+	<div class="contact-us-form">
+	<div class="contact-us-field"><input type="text" name="Name" placeholder="Name" data-validation="custom" data-validation-regexp="^([a-zA-Z]+)$"  data-validation-error-msg="This Field is required"/></div>
+	<div class="contact-us-field"><select class="form-control" id="sel1">
+        <option>I am...</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select></div>
+	<div class="contact-us-field"><input type="text" name="Country" placeholder="Country" data-validation="required" data-validation-error-msg="This Email is not valid"/></div>
+	<div class="contact-us-field"><input type="text" name="Company Name" placeholder="Company Name" /></div>
+	<div class="contact-us-full-field"><input type="text" name="Contact Number" placeholder="Contact Number"/></div>
+	</div>
+	</div>
+	<div class="submit-button">
+		<input class="submit" type="submit" name="submit" value="SUBMIT">
+	</div>
+	</form>
+	-->
 		<!--#################################################
 	#	Script For Showing More Content				#
 	#################################################-->
@@ -189,12 +223,15 @@ We’re looking for smart, young individuals, who think that they can add value 
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/plugins.js"></script>
+        
+         <script src="js/vendor/bootstrap-formhelpers-countries.js"></script>
+        <script src="js/vendor/bootstrap-formhelpers-countries.es_ES.js"></script>
         <script src="js/main.js"></script>
         
-          <script>
+        <script>
          	$(document).ready(function(){
          		$(".submit-form").on("click",function(){
-         			$("#cufv").submit();
+         			$("#cntc-form").submit();
          		});
          	});
          	
@@ -203,7 +240,7 @@ We’re looking for smart, young individuals, who think that they can add value 
          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.2.1/jquery.form-validator.min.js"></script>
 	<script>
 	 $.validate();
-</script>
+</script>	
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
